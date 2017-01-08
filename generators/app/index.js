@@ -7,8 +7,8 @@ var glob = require('glob');
 module.exports = class extends Generator {
   prompting() {
     // Have Yeoman greet the user.
-    this.log("->>> Upgrowth Canaveral <<<-");
-    
+    this.log(this.fs.read(this.templatePath('../../../rocket.txt')));
+
     var prompts = [
       {
         type: 'input',
