@@ -1,4 +1,4 @@
-# generator-canaveral [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
+# generator-canaveral
 > Where we launch things that go places
 
 ## Installation
@@ -42,11 +42,3 @@ yo canaveral
 ## License
 
 Apache-2.0 © [Upgrowth](http://www.upgrowth.com.au)
-
-
-<!--[npm-image]: https://badge.fury.io/js/generator-canaveral.svg
-[npm-url]: https://npmjs.org/package/generator-canaveral
-[travis-image]: https://travis-ci.org/upgrowth/generator-canaveral.svg?branch=master
-[travis-url]: https://travis-ci.org/upgrowth/generator-canaveral
-[daviddm-image]: https://david-dm.org/upgrowth/generator-canaveral.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/upgrowth/generator-canaveral-->
