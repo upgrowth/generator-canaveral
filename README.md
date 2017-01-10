@@ -3,34 +3,50 @@
 
 ## Installation
 
-First, install [Yeoman](http://yeoman.io) and generator-canaveral using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
-
+You're going to need [node.js](https://nodejs.org/)
 ```bash
-npm install -g yo
-npm install -g generator-canaveral
+brew install node
 ```
 
-Then generate your new project:
+We use yarn, not npm, because its good.
+```bash
+npm install -g yarn
+```
+
+Then you're going to want to install [Yeoman](http://yeoman.io) and the Firebase toolset
+```bash
+yarn global add yo firebase-tools
+```
+
+Then you can totally install this thing right from GitHub since it aint on NPM yet
 
 ```bash
+yarn global add https://github.com/upgrowth/generator-canaveral
+```
+
+Then make your new project
+```bash
+mkdir project-name
+cd project-name
 yo canaveral
 ```
 
-## Getting To Know Yeoman
+### Build Commands
 
- * Yeoman has a heart of gold.
- * Yeoman is a person with feelings and opinions, but is very easy to work with.
- * Yeoman can be too opinionated at times but is easily convinced not to be.
- * Feel free to [learn more about Yeoman](http://yeoman.io/).
+`yarn start` runs your project in dev mode
+`yarn run build` builds your project in prod mode to the build folder
+`yarn run test` runs your tests, hope you wrote some
+`yarn run clean` removes the build folder so that's nice
+`yarn run deploy` cleans, builds and then deploys your project to firebase 
 
 ## License
 
-Apache-2.0 © [Leon Spencer](http://www.upgrowth.com.au)
+Apache-2.0 © [Upgrowth](http://www.upgrowth.com.au)
 
 
-[npm-image]: https://badge.fury.io/js/generator-canaveral.svg
+<!--[npm-image]: https://badge.fury.io/js/generator-canaveral.svg
 [npm-url]: https://npmjs.org/package/generator-canaveral
 [travis-image]: https://travis-ci.org/upgrowth/generator-canaveral.svg?branch=master
 [travis-url]: https://travis-ci.org/upgrowth/generator-canaveral
 [daviddm-image]: https://david-dm.org/upgrowth/generator-canaveral.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/upgrowth/generator-canaveral
+[daviddm-url]: https://david-dm.org/upgrowth/generator-canaveral-->
