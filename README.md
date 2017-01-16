@@ -1,7 +1,9 @@
 # generator-canaveral
 > Where we launch things that go places
 
-## Installation
+
+
+## General Installation
 
 You're going to need [node.js](https://nodejs.org/)
 ```bash
@@ -24,6 +26,8 @@ Then you can totally install this thing right from GitHub since it aint on NPM y
 yarn global add https://github.com/upgrowth/generator-canaveral
 ```
 
+## React Web
+
 Then make your new project
 ```bash
 mkdir project-name
@@ -38,6 +42,15 @@ yo canaveral
 `yarn run test` runs your tests, hope you wrote some
 `yarn run clean` removes the build folder so that's nice
 `yarn run deploy` cleans, builds and then deploys your project to firebase 
+
+
+## React Native
+
+`yarn global add react-native` installs the React Native CLI
+`react-native init <projectname>` Create a new react native project
+`cd project-name` 
+`yo canaveral:native` Sets up a canaveral react-native app
+
 
 ## License
 
