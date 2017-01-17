@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { View } from 'react-native';
 import {
     Header,
     Link,
@@ -8,6 +7,13 @@ import {
     Router,
     StackRoute,
 } from 'react-router-native';
+import {
+  View,
+  ListView,
+  Screen,
+  NavigationBar,
+  Title
+} from '@shoutem/ui'
 
 import Landing from './landing/Landing';
 import { Page2, Page2Header } from './page2/Page2';

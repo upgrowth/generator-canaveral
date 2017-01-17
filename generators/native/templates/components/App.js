@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { fetch } from 'react-native';
 import { nativeHistory } from 'react-router-native';
-import firebase from '../services/firebase';
 import Routes from './Routes';
-
+import { StyleProvider } from '@shoutem/theme';
+import firebase from '../services/firebase';
+import theme from '../config/theme';
 
 
 export default class App extends Component {
@@ -12,7 +13,11 @@ export default class App extends Component {
     }    
   
     render() {
-        return <Routes />;
+        return (
+        <StyleProvider style={theme}>
+            <Routes />
+        </StyleProvider>
+        );
     }
 }
 
